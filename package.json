@@ -1,0 +1,15 @@
+{
+  "name": "metatag-rename",
+  "version": "1.0.0",
+  "description": "An app to rename music files based on metadata",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
