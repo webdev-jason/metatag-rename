@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 { 
+    color: #61dafb; 
+}
+
+.control-group {
+    margin-bottom: 20px;
+    background: #2d2d2d;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #007acc;
+    color: white;
+    font-weight: bold;
+    flex: 1;
+    transition: background-color 0.2s;
+}
+
+button:hover { 
+    background-color: #005f9e; 
+}
+
+/* Specific styles for our execution button */
+#execute-btn {
+    background-color: #28a745;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 15px;
+}
+
+#execute-btn:hover { 
+    background-color: #218838; 
+}
+
+#execute-btn:disabled { 
+    background-color: #555; 
+    cursor: not-allowed; 
+    color: #aaa; 
+}
+
+#path-display, #status-display {
+    font-family: monospace;
+    background: #000;
+    padding: 10px;
+    border-radius: 4px;
+    color: #4af626;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+#status-display { 
+    color: #f1f1f1; 
+    display: none; 
+}

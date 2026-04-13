@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>MetaTag Renamer</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 20px;
-            background-color: #1e1e1e;
-            color: #ffffff;
-        }
-        h1 {
-            color: #61dafb;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <h1>MetaTag Renamer</h1>
-    <p>Welcome to our new application. The interface will go here.</p>
     
+    <div class="control-group">
+        <label><strong>1. Select Target:</strong></label><br>
+        <div class="button-group">
+            <button id="select-folder-btn">Browse Folder...</button>
+            <button id="select-files-btn">Browse Files...</button>
+        </div>
+        <p id="path-display">No files or folder selected.</p>
+    </div>
+
+    <div class="control-group">
+        <label><strong>2. Execute:</strong></label><br>
+        <button id="execute-btn" disabled>Rename Files</button>
+        <div id="status-display"></div>
+    </div>
+
     <script src="./renderer.js"></script>
 </body>
 </html>
